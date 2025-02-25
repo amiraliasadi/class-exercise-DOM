@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter</title>
+    <style>
+      .product-card {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="electronics">Electronics</option>
+      <option value="clothing">Clothing</option>
+      <option value="books">Books</option>
+    </select>
+
+    <div id="productContainer">
+      <div class="product-card" data-category="electronics">
+        <h3>Laptop</h3>
+        <p>A powerful laptop.</p>
+      </div>
+      <div class="product-card" data-category="clothing">
+        <h3>T-Shirt</h3>
+        <p>A comfortable cotton t-shirt.</p>
+      </div>
+      <div class="product-card" data-category="books">
+        <h3>JavaScript Book</h3>
+        <p>Learn JavaScript programming.</p>
+      </div>
+      <div class="product-card" data-category="electronics">
+        <h3>Smartphone</h3>
+        <p>A modern smartphone.</p>
+      </div>
+      <div class="product-card" data-category="clothing">
+        <h3>Jeans</h3>
+        <p>Classic denim jeans.</p>
+      </div>
+      <div class="product-card" data-category="books">
+        <h3>Python Book</h3>
+        <p>Learn Python programming.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
